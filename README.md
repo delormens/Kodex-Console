@@ -1,6 +1,6 @@
 # Hi there, I'm [DELORMEN](https://delormen.ru) ![](https://github.com/delormens/) 
-# VK: @delormen
-# TG: @delormen
+# VK: @delormen(https://vk.com/delormen)
+# TG: @delormen(https://t.me/delormen)
 ### Computer science student, IT cybersecurity specialist from Russia 🇷🇺
 
 # [INFORMATION]
