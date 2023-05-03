@@ -28,17 +28,20 @@ from getpass import getpass
 ################################################################################
 #                           ОБНОВЛЕНИЕ                                        #
 ################################################################################ 
-current_version = '1.0.0'
+current_version = '1.0'
 
 def check_update():
-    response = requests.get('https://github.com/delormens/console/version.txt')
+    # выполнить запрос на ваш сайт или GitHub
+    response = requests.get('https://github.com/delormens/Butterfly/blob/console/version.txt')
     new_version = response.text.strip()
     if new_version > current_version:
-        return 'https://github.com/delormens/console/console.py'
+        # вернуть ссылку для скачивания обновления
+        return new_version, 'https://github.com/delormens/Butterfly/blob/console/console_not.py'
     else:
         return None
+
 def update():
-    update_url = check_update()
+    new_version, update_url = check_update()
     if update_url:
         print('A new version of the program is available!')
         print('Current version: ', current_version)
@@ -46,13 +49,14 @@ def update():
         answer = input('Would you like to download a new version? [Y/n] ').strip().lower()
         if answer == 'y':
             response = requests.get(update_url)
-            with open('console.py', 'wb') as f:
+            with open('butterfly.py', 'wb') as f:
                 f.write(response.content)
             print('The new version has been uploaded.')
         else:
             return
     else:
         print('No update is required.')
+
 update()
 
 
