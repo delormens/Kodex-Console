@@ -9,6 +9,3 @@
 ### It provides a wide range of functions, allowing you to configure and manage networks, protect systems, crack passwords and perform other tasks that may be required in hacker testing and tool development. 
 ### Using the hacker console, you can perform various types of system analysis, penetration testing, information collection, data interception, text processing, file management and much more. 
 ### This is a necessary tool for any information security specialist who is focused on solving problems related to the detection of vulnerabilities and the protection of computer infrastructure.
-
-# [INSTALLATION]
-# pip install -r requirements.txt
